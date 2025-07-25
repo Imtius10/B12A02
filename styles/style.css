@@ -220,7 +220,7 @@ text-align: center;
 @media screen and (max-width: 576px) {
   .carts {
     
-    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    grid-template-columns: repeat(2, 1fr); 
    
 
   
