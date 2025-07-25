@@ -1,0 +1,202 @@
+/* shared */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+}
+ 
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.text-color-1 {
+    color: rgba(37, 36, 50, 1);
+    font-size: 46;
+    font-weight: bold;
+}
+.text-color-3{
+    color: rgba(233, 90, 8, 1);
+}
+.text-color-2 {
+    color: rgba(137, 135, 161, 1);
+    font-size: 22;
+    font-weight: 570;
+}
+.text-color-2-5{
+     color: rgba(0, 0, 0, 0.5);
+}
+
+/* banner nav bar */
+.banner-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul {
+    list-style: none;
+    margin-right: 150px;
+
+
+}
+
+.nav-list li {
+    flex: 1;
+    /* Makes all items same width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 110px;
+    margin-top: 30px;
+}
+
+.logo {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+#Home {
+    color: rgba(37, 36, 50, 1);
+}
+/* banner */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 120px 150px; */
+}
+.font-size-1{
+    font-size: 4rem;
+     margin: none;
+}
+.banner-title{
+  margin: none;
+  margin-top: 160px;
+}
+.banner-img{
+    margin-top: 106px;
+}
+h1 {
+  margin: 0;
+}
+.hero-banner{
+   margin: 120px 150px;
+   
+}
+@media screen and (max-width: 776px) {
+  .banner-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+  
+
+  }
+
+  /* Hide Home, Shop, About */
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  }
+
+  .nav-list li:not(:last-child) {
+    display: none;
+  }
+
+  .nav-list li:last-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+  }
+
+  .nav-bar img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner-img {
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .banner-img img {
+   
+    width: 100%;
+   
+    object-fit: cover;
+  }
+  .banner-img{
+    order: -1;
+  }
+  .font-size-1 {
+    font-size: 2rem;
+  }
+  .banner-title{
+    text-align: left;
+    margin-left: 0px;
+  }
+
+}
+
+
+/* our plant */
+.our-plants-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.our-plants-sub-title{
+    text-align: center;
+}
+
+
+/* cart */
+.carts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content: space-around;
+}
+.cart-title{
+    
+    
+    padding-left: 80px;
+    
+}
+.cart-price{
+     
+   
+    padding-left: 90px;
+    
+}
+.cart-btn{
+    height: 50px;
+    width: 270px;
+    background-color: rgba(233, 90, 8, 1);
+    border: none;
+    color: white;
+}
