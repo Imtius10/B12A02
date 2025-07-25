@@ -278,7 +278,7 @@ h1 {
 .badge {
    
      
-      filter: drop-shadow(5px 5px 10px rgba(30, 10, 10, 1));
+      filter: drop-shadow(5px 5px 10px rgb(186, 186, 210));
        
        animation: rotate360 3s linear infinite;
     
